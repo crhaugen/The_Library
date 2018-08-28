@@ -1,0 +1,43 @@
+KatePoccras,I Was Here: A Travel Journal for the Curious Minded,0811877701,2011,Travel
+NationalGeographic,Destinations of a Lifetime: 225 of the World's Most Amazing Places,1426215649,2015,Travel
+MattKepnes,"How to Travel the World on $50 a Day: Revised: Travel Cheaper Longer Smarter",0399173285,2015,Travel
+RolfPotts,Vagabonding: An Uncommon Guide to the Art of Long-Term World Travel,0812992180,2002,Travel
+CharlePetzold,Code: The Hidden Language of Computer Hardware and Software,0735611319,2000,ComputerScience
+BrianChristian,Algorithms to Live By: The Computer Science of Human Decisions,1627790365,2016,ComputerScience
+JamesPatterson,"Hacking: Beginner to Expert Guide to Computer Hacking Basic Security and Penetration Testing ",B01HVVFDD4,2016,ComputerScience
+ChrisBernhardt,Turing's Vision: The Birth of Computer Science,0262034549,2016,computerScience
+A.K.Dewdney,The New Turing Omnibus: Sixty-Six Excursions in Computer Science,0805071660,1993,ComputerScience
+DonaldKnuth,"The Art of Computer ProgrammingVol. 1: Fundamental Algorithms",0201038099,1973,ComputerScience
+PieterLars,Everyday Apocalypse: Season One,B01N9XWEJA,2017,Satire
+YahtzeeCroshaw,Will Save the Galaxy for Food,1506701655,2017,Satire
+KurtVonegut,Cat's Cradle: A Novel,038533348X,1998,Satire
+RainaTelgemeier,Ghosts,0545540623,2016,Satire
+ChrissyTeigen,Cravings: Recipes for All the Food You Want to Eat,1101903910,2016,CookBook
+GinaHomolka,"The Skinnytaste Cookbook: Light on Calories Big on Flavor",0385345623,2014,CookBook
+MelissaHartwig,The Whole30: The 30-Day Guide to Total Health and Food Freedom,0544609719,2015,CookBook
+Dr.Seuss,"Oh The Places You'll Go!",0679805273,1990,Children
+Dr.Seuss,Dr. Seuss's ABC: An Amazing Alphabet Book!,0679882812,1996,Children
+Dr.Seuss,Green Eggs and Ham,0545002850,1960,Children
+Dr.Seuss,The Cat in the Hat,039480001X,1957,Children
+JackKent,The Fat Cat: A Danish Folktale,0590021745,1971,Children
+NeilGaiman,Norse Mythology,039360909X,2017,Fantasy
+RobertO'Brien,Mrs. Frisby and the Rats of NIMH,0689710681,1997,Fantasy
+StephenKing,11/22/63: A Novel,1501120603,this,Fantasy
+EdwinAbbott,Flatland: A Romance of Many Dimensions,048627263X,1992,Fantasy
+CullenBunn,Deadpool Kills the Marvel Universe,0785164030,2012,Comic
+AlanMoore,"Batman: The Killing Joke Deluxe Edition",1401216676,2008,Comic
+GeoffJohns,Flashpoint,1401233384,2012,Comic
+AlanMoore,V for Vendetta,140120841X,2008,Comic
+AlanMoore,Watchmen #1,B000V600CQ,1986,Comic, 
+IlsaMadden-Mills,Fake Fiancée,1542779308,2017,Romance
+DanielleSteel,The Mistress: A Novel,01E2GZ5FC,2017,Romance
+E.L.James,Fifty Shades Freed,B007IXWL2C,2012,Romance
+C.J.Scarlett,Tekkin,B06W579B6K,2017,Romance
+RupiKaur,Milk and Honey,144947425X,2015,Poetry
+LainThomas,I Wrote This For You,1926760689,2011,Poetry
+WilliamBlake,Songs of Innocence and Experience,0192810898,1794,Poetry
+JonathanCahn,The Book of Mysteries,162998941X,2016,Mystery
+KeithGiffen,Scooby Apocalypse,1401267904,2017,Mystery
+GregTang,The Grapes Of Math,0439598400,2004,Math
+EuclidEuclid,Euclid's Elements,1888009195,2002,Math
+GeorgeBoole,An Investigation of the Laws of Thought,0486600289,1958,Math
