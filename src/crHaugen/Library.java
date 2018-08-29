@@ -1,7 +1,5 @@
 package crHaugen;
 
-
-
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -34,6 +32,11 @@ public class Library {
 		patrons = new ArrayList<Patron>();
 		transactions = new ArrayList<Transaction>();
 	}
+	/**
+	 * 
+	 * @param fileName, file which bookd will br added to 
+	 * @return boolean whether the books were added successfully
+	 */
 
 	public boolean addBooks(String fileName) {
 		try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
@@ -69,6 +72,11 @@ public class Library {
 		return true;
 	}
 	
+	/**
+	 * 
+	 * @param fileName, file of patrons to be added to library
+	 * @return boolean to patrons where added or not
+	 */
 	public boolean addPatrons(String fileName) {
 		try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
 			String line = " ";
@@ -117,6 +125,12 @@ public class Library {
 		}
 	}
 
+	/**
+	 * 
+	 * @param fileToPrint, file which patrons will be written to
+	 * @param patrons2, arraylist of patrons to write to file
+	 * @throws IOException
+	 */
 	private void writeFileLinesPatron(String fileToPrint, ArrayList<Patron> patrons2) throws IOException
 	{
 		FileWriter file = new FileWriter(fileToPrint);
@@ -127,6 +141,12 @@ public class Library {
 		
 	}
 
+	/**
+	 * 
+	 * @param fileToPrint, file which books will be written to 
+	 * @param book, arraylist of book to be written to file
+	 * @throws IOException
+	 */
 	private void writeFileLinesBook(String fileToPrint, ArrayList<Book> book) throws IOException
 	{
 		FileWriter file = new FileWriter(fileToPrint);
@@ -144,6 +164,7 @@ public class Library {
 		}
 	}
 	
+	
 	public void printListOfTransactions()
 	{
 				
@@ -151,11 +172,20 @@ public class Library {
 			System.out.println(t.toString());
 		}
 	}
+	
+	/**
+	 * 
+	 * @param book, book being added
+	 */
 
 	public void addBook(Book book) {
 		books.add(book);
 	}
 	
+	/**
+	 * 
+	 * @param ISBN book being removed 
+	 */
 	public void removeBook(String ISBN)
 	{
 		for (int i = 0; i < books.size(); i++) {
@@ -165,10 +195,18 @@ public class Library {
 		}
 	}
 
+	/**
+	 * 
+	 * @param patron, adding patron to library
+	 */
 	public void addPatron(Patron patron) {
 		patrons.add(patron);  
 	}
 	
+	/**
+	 * 
+	 * @param cardNumber, patron being removed from library
+	 */
 	public void removePatron(String cardNumber)
 	{
 		for (int i = 0; i < patrons.size(); i++) {
@@ -178,7 +216,12 @@ public class Library {
 		}
 	}
 
-	// seeing if user can check out the book they want
+	/**
+	 * 
+	 * @param cardNumber, allows a valid patron to check out a book
+	 * @param ISBN, book being checked out
+	 * @return boolean depending on if check out was successful
+	 */
 	public boolean checkOutBooks(String cardNumber, String ISBN) {
 		boolean bookOut = false;
 		boolean validCard = false;
@@ -221,6 +264,12 @@ public class Library {
 
 		return bookOut;
 	}
+	/**
+	 * 
+	 * @param cardNumber, allows patron to checked in a book 
+	 * @param ISBN, book being checked in 
+	 * @return boolean depending on if check in was successful 
+	 */
 	
 	public boolean checkInBooks(String cardNumber, String ISBN) {
 		boolean bookIn = false;
@@ -278,7 +327,10 @@ public class Library {
 		return bookIn;
 	}
 
-	// return if the user has fees or not
+	/**
+	 * 
+	 * @return arraylist of all patrons who have fees 
+	 */
 	public ArrayList<Patron> oweFees() {
 		ArrayList<Patron> oweFees = new ArrayList<Patron>();
 
@@ -290,6 +342,10 @@ public class Library {
 		return (oweFees);
 	}
 	
+	/**
+	 * 
+	 * @param cardNumber, allows a patron to pay any fees given a valid card number
+	 */
 	public void PayFees(String cardNumber) {
 		
 		
@@ -312,6 +368,10 @@ public class Library {
 		}
 	}
 	
+	/**
+	 * 
+	 * @param lastName, prints out patron from valid last name
+	 */
 	public void lookUpPatron(String lastName)
 	{
 		for (int i = 0; i < books.size(); i++) {
@@ -321,6 +381,10 @@ public class Library {
 		}
 	}
 	
+	/**
+	 * 
+	 * @param cardNumber, prints out patron from valid card number
+	 */
 	public void lookUpPatronCardNum(String cardNumber)
 	{
 		for (int i = 0; i < books.size(); i++) {
@@ -330,6 +394,10 @@ public class Library {
 		}
 	}
 	
+	/**
+	 * 
+	 * @param ISBN, prints out book with given ISBN
+	 */
 	public void lookUpBook(String ISBN)
 	{
 		for (int i = 0; i < books.size(); i++) {
@@ -339,7 +407,11 @@ public class Library {
 		}
 	}
 
-	// return list of book from an author
+	/**
+	 * 
+	 * @param author, finds all book with given author
+	 * @return arraylist with all book from author
+	 */
 	public ArrayList<Book> findAuthor(String author) {
 		ArrayList<Book> authorBook = new ArrayList<Book>();
 
@@ -351,7 +423,11 @@ public class Library {
 		return (authorBook);
 	}
 	
-	   // return list of transaction given a data
+	   /**
+	    * 
+	    * @param data, method will find all books from given year
+	    * @return arraylist of all transaction with a given date 
+	    */
 		public ArrayList<Transaction> findTransactions(String data) {
 			ArrayList<Transaction> dataTransaction = new ArrayList<Transaction>();
 
@@ -363,7 +439,11 @@ public class Library {
 			return (dataTransaction);
 		}
 		
-		// return list of book from a genre
+		/**
+		 * 
+		 * @param genre, method will find all boon with given genre 
+		 * @return arraylist of book with given genre
+		 */
 		public ArrayList<Book> findGenre(BookGenre genre) {
 			ArrayList<Book> bookGenre = new ArrayList<Book>();
 
@@ -378,7 +458,7 @@ public class Library {
 
 	@Override
 	public String toString() {
-		return "Library [patrons=" + patrons + ", books=" + books + ", transactions=" + transactions + "]";
+		return "Library [Patrons = " + patrons + ", Books = " + books + ", Transactions = " + transactions + "]";
 	}
 
 	@Override

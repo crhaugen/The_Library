@@ -1,6 +1,5 @@
 package crHaugen;
 
-
 /**
  * @author crhaugen
  *
@@ -113,7 +112,7 @@ public class Patron {
 	
 	@Override
 	public String toString() {
-		return "Patron [cardNumber=" + cardNumber + ", fees=" + fees + ", firstName=" + firstName + ", lastName="
+		return "Patron [CardNumber = " + cardNumber + ", Fees = " + fees + ", FirstName = " + firstName + ", LastName = "
 				+ lastName + "]";
 	}
 

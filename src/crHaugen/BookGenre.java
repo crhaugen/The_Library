@@ -1,6 +1,5 @@
 package crHaugen;
 
-
 /**
  * @author Chyanne Haugen
  *

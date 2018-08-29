@@ -1,6 +1,5 @@
 package crHaugen;
 
-
 import java.math.BigDecimal;
 import java.util.Scanner;
 
@@ -154,7 +153,7 @@ public class Main {
 		  
 		    
 	   library.readBooksToFile();
-	   library.readPatronsToFile();
+	   library.readPatronsToFile(); 
 	   
 	  input.close(); 
 	   
