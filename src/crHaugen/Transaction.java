@@ -25,7 +25,6 @@ public class Transaction {
 	public Transaction(String data, Patron patron, TransactionType transactionType)
 	{
 		this.data = data;
-		//this.book = book;
 		this.patron = patron;	
 		this.setTransactionType(transactionType);
 	}
@@ -54,13 +53,15 @@ public class Transaction {
 
 
 	@Override
-	public String toString() {
+	public String toString()
+	{
 		return "Transaction [data=" + data + ", book=" + book + ", patron=" + patron + "]";
 	}
 
 
 	@Override
-	public int hashCode() {
+	public int hashCode() 
+	{
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((book == null) ? 0 : book.hashCode());
